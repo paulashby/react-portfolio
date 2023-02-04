@@ -1,3 +1,14 @@
+:root {
+  --col-primary: #20484a;
+  --col-primary-dark: #1b383b;
+  --col-primary-muted: #4d8487;
+  --col-primary-mid: #2aa0a6;
+  --col-primary-light: #60cad0;
+  --col-primary-bright: #0ba6ac;
+  --col-primary-neon: #69f9ff;
+}
+
+/* React styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +21,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* End React syles */
+body {
+  background-color: var(--col-primary);
 }
