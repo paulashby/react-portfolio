@@ -6,8 +6,8 @@ function Header(props) {
     <div className="jumbotron jumbotron-fluid">
     <div className="container">
         {<Navbar />}
-        <h1 className="display-4">Fluid jumbotron</h1>
-        <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1 className="display-4">Paul Ashby</h1>
+        <p className="lead">Developing Nicely</p>
     </div>
     </div>
   );
