@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar";
-import Bootstrap, { Jumbotron as ReactJumbotron } from 'bootstrap-4-react';
+import { Jumbotron as ReactJumbotron } from 'bootstrap-4-react';
 import "./style.css";
 
 function Header(props) {
   return (
     <header>
 
-      {<Navbar />}
+      <Navbar navLinks={props.navLinks}/>
 
       <section className="hero">
 

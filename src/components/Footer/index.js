@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className="page-footer font-small pt-4 pb-4 bg-dark">
 
@@ -23,10 +23,10 @@ function Footer(props) {
           <div id="legal" className="col-md-3 pl-0 pr-0">
             <ul className="pl-0">
               <li>
-                <Link to={"/pages/terms"} activeClassName="active">Terms of Use</Link>
+                <Link to={"/pages/terms"}>Terms of Use</Link>
               </li>
               <li>
-                <Link to={"/pages/privacy"} activeClassName="active">Privacy Policy</Link>
+                <Link to={"/pages/privacy"}>Privacy Policy</Link>
               </li>
               <li>
                 All content &#169; Paul Ashby, 2022

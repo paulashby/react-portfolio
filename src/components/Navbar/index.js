@@ -20,9 +20,6 @@ function Navbar(props) {
 
         <Collapse navbar id="navbarNav">
           <ReactNavbar.Nav className="text-right ml-auto mt-3 mt-lg-0">
-            <Nav.Item active>
-              <Nav.Link href="/">Home</Nav.Link>
-            </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/pages/projectgallery">Project Gallery</Nav.Link>
             </Nav.Item>
