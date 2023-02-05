@@ -23,6 +23,7 @@ code {
     monospace;
 }
 /* End React syles */
+
 body {
   background-color: var(--col-primary);
 }
@@ -30,4 +31,8 @@ body {
 h3 {
   font-size: 1.4rem;
   color: var(--col-primary-mid);
+}
+
+a:not(.btn-primary) {
+  color: var(--col-primary-bright);
 }
