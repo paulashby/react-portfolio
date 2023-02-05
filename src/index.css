@@ -26,3 +26,8 @@ code {
 body {
   background-color: var(--col-primary);
 }
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--col-primary-mid);
+}

@@ -7,7 +7,7 @@ function Navbar(props) {
 
   return (
       <ReactNavbar className="navbar-expand-lg navbar-dark bg-dark">
-        <Link to="/home"
+        <Link to="/"
         className="navbar-brand">
           <img
             src="/images/icon-code.svg"
