@@ -36,3 +36,9 @@ h3 {
 a:not(.btn-primary) {
   color: var(--col-primary-bright);
 }
+
+/* Glow on button hover */
+a.btn-primary:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(105, 249, 255, 0.72);
+    box-shadow: 0px 0px 10px 0px rgba(105, 249, 255, 0.72);
+}

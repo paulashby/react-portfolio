@@ -1,0 +1,21 @@
+.card {
+    border-color: var(--col-primary-muted);
+}
+
+.card-body {
+    background-color: var(--col-primary-dark);
+}
+
+a:not(.btn-primary) {
+    color: var(--col-primary-bright);
+}
+
+.card .btn-primary {
+    background-color: var(--col-primary-mid);
+    border-color: var(--col-primary-mid);
+}
+
+.card .btn-primary:hover {
+    background-color: var(--col-primary-light);
+    border-color: var(--col-primary-light);
+}

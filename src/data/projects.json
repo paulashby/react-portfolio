@@ -1,65 +1,116 @@
 [
     {
+        "id": 1,
         "title": "Paperbird Publishing website",
+        "descriptor": "Paperbird",
         "images": {
-            "teaser": "./images/webpaperbird-bigger.gif",
-            "teaserAlt": "Screenshot of Paperbird website"
+            "teaser": "../images/webpaperbird-bigger.gif"
         },
-        "description": "Site built in PHP using the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. I created a number of bespoke Processwire modules to allow the shop owner to easily manage content &amp; orders and to read messages submitted to the site contact form. The styles were writted in SASS usng the BEM methodology.",
-        "role": "Sole developer, designer"
+        "inlineLinks": {
+            "processwire": {
+                "url": "https://processwire.com/",
+                "text": "Processwire"
+            }
+        },
+        "description": "Site built in PHP using the <link-processwire> content management system. I created a number of bespoke Processwire modules to allow the shop owner to easily manage content &amp; orders and to read messages submitted to the site contact form. The styles were writted in SASS usng the BEM methodology.",
+        "role": "Sole developer, designer",
+        "deployedLink": "https://www.paperbirdpublishing.co.uk/"
     },
     {
+        "id": 2,
         "title": "StMonday golf wear website",
+        "descriptor": "StMonday",
         "images": {
-            "teaser": "./images/webstmonday.jpg",
-            "teaserAlt": "StMonday website"
+            "teaser": "../images/webstmonday.jpg"
         },
+        "inlineLinks": {},
         "description": "Online shop for golf clothing start up. This is a WordPress site making use of the WooCommerce PlugIn for sales functionality. GDPR-compliant analytics are provided by Matomo. The site is running on a Virtual Private Server which I administer via SSH and a Plesk control panel.",
-        "role": "Sole developer, server administrator"
+        "role": "Sole developer, server administrator",
+        "deployedLink": "https://stmonday.xyz/"
     },
     {
+        "id": 3,
         "title": "Open Triviata Database",
+        "descriptor": "Open Triviata",
         "images": {
-            "teaser": "./images/webotriviata.jpg",
-            "teaserAlt": "Screenshot of Open Triviata Database homepage"
+            "teaser": "../images/webotriviata.jpg"
         },
-        "description": "I created an API serving questions sourced from <a href='https://opentdb.com/' target='blank'>the Open Trivia Database</a> with the useful addition of ID numbers. This involved writing a PHP program to synchronise the data an API that accepts the same queries as the original Open TriviaAPI. The webpage makes use of the UIKit CSS framework.",
-        "role": "Sole developer, designer"
+        "inlineLinks": {
+            "opentb": {
+                "url": "https://opentdb.com/",
+                "text": "the Open Trivia Database"
+            }
+        },
+        "description": "I created an API serving questions sourced from <link-opentb> with the useful addition of ID numbers. This involved writing a PHP program to synchronise the data an API that accepts the same queries as the original Open TriviaAPI. The webpage makes use of the UIKit CSS framework.",
+        "role": "Sole developer, designer",
+        "deployedLink": "https://otriviata.com/"
     },
     {
+        "id": 4,
         "title": "Primitive website",
+        "descriptor": "Primitive",
         "images": {
-            "teaser": "./images/webprimitive.jpg",
-            "teaserAlt": "Screenshot of primitive homepage"
+            "teaser": "../images/webprimitive.jpg"
         },
-        "description": "Website promoting my freelance design and development services. The site runs on the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quo unde eum, libero dolorum cupiditate maiores dicta impedit veniam obcaecati.",
-        "role": "Sole developer, designer"
+        "inlineLinks": {
+            "processwire": {
+                "url": "https://processwire.com/",
+                "text": "Processwire"
+            }
+        },
+        "description": "Website promoting my freelance design and development services. The site runs on the <link-processwire> content management system. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quo unde eum, libero dolorum cupiditate maiores dicta impedit veniam obcaecati.",
+        "role": "Sole developer, designer",
+        "deployedLink": "https://www.primitive.co"
     },
     {
+        "id": 5,
         "title": "Anty gravity HTML5 game",
+        "descriptor": "Anty Gravity",
         "images": {
-            "teaser": "./images/gamesantygravity.jpeg",
-            "teaserAlt": "Anty Gravity game graphic"
+            "teaser": "../images/gamesantygravity.jpeg"
         },
-        "description": "HTML5 game written making use of the <a href='https://phaser.io/' target='blank'>Phaser</a> HTML5 game framework. The game began as a test of players&rsquo; timing and gradually morphed into this antastic spacescape. The development of the game involved extensive JavaScript programming.",
-        "role": "Sole developer, designer, illustrator"
+        "inlineLinks": {
+            "phaser": {
+                "url": "https://phaser.io/",
+                "text": "Phaser"
+            }
+        },
+        "description": "HTML5 game written making use of the <link-phaser> HTML5 game framework. The game began as a test of players&rsquo; timing and gradually morphed into this antastic spacescape. The development of the game involved extensive JavaScript programming.",
+        "role": "Sole developer, designer, illustrator",
+        "deployedLink": "https://www.primitive.co/games/antygravity/"
     },
     {
+        "id": 6,
         "title": "Spotted HTML5 game",
+        "descriptor": "Spotted",
         "images": {
-            "teaser": "./images/gamesspotted.jpeg",
-            "teaserAlt": "Spotted game graphic"
+            "teaser": "../images/gamesspotted.jpeg"
         },
-        "description": "Another <a href='https://phaser.io/' target='blank'>Phaser</a> game continuing the intergalactic insect theme. Once the bugs have been spotted, the challenging control mechanics make capturing them difficult - especially with the extra pressure of their fearsome mutant phase.",
-        "role": "Sole developer, designer, illustrator"
+        "inlineLinks": {
+            "phaser": {
+                "url": "https://phaser.io/",
+                "text": "Phaser"
+            }
+        },
+        "description": "Another <link-phaser> game continuing the intergalactic insect theme. Once the bugs have been spotted, the challenging control mechanics make capturing them difficult - especially with the extra pressure of their fearsome mutant phase.",
+        "role": "Sole developer, designer, illustrator",
+        "deployedLink": "https://www.primitive.co/games/spotted/"
     },
     {
+        "id": 7,
         "title": "Hot Larva HTML5 game",
+        "descriptor": "Hot Larva",
         "images": {
-            "teaser": "./images/gameshotlarva.jpeg",
-            "teaserAlt": "Hot Larva game graphic"
+            "teaser": "../images/gameshotlarva.jpeg"
         },
-        "description": "A final <a href='https://phaser.io/' target='blank'>Phaser</a> space bug game. This one is a bit of a platformer, with hidden gems rewarding hazardous jumps onto the randomly-added ledges.",
-        "role": "Sole developer, designer, illustrator"
+        "inlineLinks": {
+            "phaser": {
+                "url": "https://phaser.io/",
+                "text": "Phaser"
+            }
+        },
+        "description": "A final <link-phaser> space bug game. This one is a bit of a platformer, with hidden gems rewarding hazardous jumps onto the randomly-added ledges.",
+        "role": "Sole developer, designer, illustrator",
+        "deployedLink": "https://www.primitive.co/games/hotlarva/"
     }
 ]
