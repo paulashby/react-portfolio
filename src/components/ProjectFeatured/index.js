@@ -1,6 +1,6 @@
 import React from "react";
 import Description from "../Description";
-// import DeployedLink from "../DeployedLink";
+import DeployedLink from "../DeployedLink";
 import "./style.css";
 
 function ProjectFeatured(props) {
@@ -20,7 +20,7 @@ function ProjectFeatured(props) {
                             <p><strong>Role:</strong> {props.role}</p>
                             {/* Wrapper class pushes button to bottom of card */}
                             <div className="mt-auto">
-                                <a href={props.deployedLink} onClick={() => props.viewDeployed(props.deployedLink, props.size)} target="blank" className="btn btn-primary">Visit site</a>
+                                <DeployedLink url={props.deployedLink} size={props.size} viewDeployed={props.viewDeployed}/>                                
                             </div>
                         </div>
                     </div>
