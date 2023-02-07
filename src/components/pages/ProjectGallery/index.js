@@ -16,6 +16,14 @@ class ProjectGallery extends Component {
     section.scrollIntoView( {behavior: "smooth", block: "start"} )
   }
 
+  viewDeployed = (url, size) => {
+    // If json entry has a window size, enter that here
+    if(size.length) {
+        window.open(url,"pagename",`resizable,${size}`); 
+        return false;
+    }
+  }
+
   render() {
     return (
       <main className="container pl-5 pr-5">
@@ -24,13 +32,12 @@ class ProjectGallery extends Component {
 
           <div id="work-intro" className="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
             <h2 id="featured-head">Featured Projects</h2>
-            <p>This is a selection of projects I&rsquo;ve worked on as sole developer - both websites and HTML5 games. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Earum eius sunt, fugit harum rem necessitatibus blanditiis
-            </p>
+            <p>This selection of work includes front end and full stack projects. Technologies include HTML5, CSS, Javascript, PHP, WordPress and Processwire.</p>
           </div>
 
           <div className="work-samples row">
 
+          {/* Render featured project at top */}
           {
               this.state.projects
               .filter(project => project.id === this.state.featured)
@@ -45,14 +52,15 @@ class ProjectGallery extends Component {
                     description={project.description}
                     role={project.role}
                     deployedLink={project.deployedLink}
-                    viewProject={this.viewProject}
+                    viewDeployed={this.viewDeployed}
+                    size={project.size}
                   />
             
               })
             }
             
 
-            {/* Render projects */}
+            {/* Render project list */}
             {
               this.state.projects
               .filter(project => project.id !== this.state.featured)

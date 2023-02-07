@@ -12,12 +12,9 @@ function Footer() {
 
           <div id="testimonials" className="order-md-2 col-md-7 offset-md-1 pl-0 pr-0 mt-3 mb-3">
             <blockquote className="font-italic">
-              &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi. Soluta, natus error
-              quasi provident possimus suscipit in? Ea voluptate eligendi fuga debitis consectetur? Vero ipsum corporis
-              quod
-              nemo reiciendis.&rdquo;
+              &ldquo;Paul is outstandingly creative and a pleasure to work with. I cannot praise his talents or his attitude highly enough.&rdquo;
             </blockquote>
-            <p>J. Smith, Marketing Director, AcmeCo</p>
+            <p>Des Kelly, Chief Reporter and interviewer for British broadcaster, BT Sport.</p>
           </div>
 
           <div id="legal" className="col-md-3 pl-0 pr-0">
