@@ -1,8 +1,0 @@
-#work-intro, #info-intro {
-    color: var(--col-primary-light);
-}
-
-#skills li {
-background-color: transparent;
-border-color: var(--col-primary-mid);
-}
