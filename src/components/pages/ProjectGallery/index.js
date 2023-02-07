@@ -17,10 +17,8 @@ class ProjectGallery extends Component {
   }
 
   viewDeployed = (url, size) => {
-    // If json entry has a window size, enter that here
-    if(size.length) {
-        window.open(url,"pagename",`resizable,${size}`); 
-        return false;
+      // If json entry has a window size, enter that here
+      if(size.length) { window.open(url,"pagename",`resizable,${size}`); 
     }
   }
 
@@ -52,13 +50,12 @@ class ProjectGallery extends Component {
                     description={project.description}
                     role={project.role}
                     deployedLink={project.deployedLink}
-                    viewDeployed={this.viewDeployed}
+                    viewDeployed= {this.viewDeployed}
                     size={project.size}
                   />
             
               })
-            }
-            
+            }            
 
             {/* Render project list */}
             {
@@ -74,7 +71,6 @@ class ProjectGallery extends Component {
                     teaserImage={project.images.teaser}
                     description={project.description}
                     role={project.role}
-                    deployedLink={project.deployedLink}
                     viewProject={this.viewProject}
                   />
             
