@@ -7,11 +7,13 @@ class ProjectGallery extends Component {
   // Setting this.state.projects to the projects json array
   state = {
     projects,
-    featured: false
+    featured: "1"
   };
   
   viewProject = id => {
     this.setState({featured: id});
+    const section = document.getElementById("featured-head");
+    section.scrollIntoView( {behavior: "smooth", block: "start"} )
   }
 
   render() {
@@ -21,7 +23,7 @@ class ProjectGallery extends Component {
         <section id="work" className="row mb-5">
 
           <div id="work-intro" className="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
-            <h2>Featured Projects</h2>
+            <h2 id="featured-head">Featured Projects</h2>
             <p>This is a selection of projects I&rsquo;ve worked on as sole developer - both websites and HTML5 games. Lorem
               ipsum dolor sit amet consectetur, adipisicing elit. Earum eius sunt, fugit harum rem necessitatibus blanditiis
             </p>

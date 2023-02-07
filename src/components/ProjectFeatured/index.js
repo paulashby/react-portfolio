@@ -28,7 +28,7 @@ function renderDescription(props) {
 function ProjectFeatured(props) {
     return (
         <div className="col-xs-12 mt-3 mb-3">
-            <div key={props.id} id="web" className="card h-100 ml-3 mr-3">
+            <div key={props.id} className="card h-100 ml-3 mr-3">
                 <div className="card-body d-flex flex-column">
                     <div className="row">
                         <div className="col-md-6 mb-3">
