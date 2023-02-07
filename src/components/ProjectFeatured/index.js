@@ -1,29 +1,6 @@
 import React from "react";
-import InlineLink from "../InlineLink";
+import Description from "../Description";
 import "./style.css";
-
-const linkRegex = /(<link-)(.*)(?=>)(.)/gm;
-
-function renderDescription(props) {
-    if (Object.keys(props.inlineLinks).length) {
-        // External link is included in JSON
-        const descSubstrings = props.description.split(linkRegex);
-        const descriptionParts = [
-            <React.Fragment key="1">
-                {descSubstrings[0]}
-            </React.Fragment>,
-            <InlineLink url={props.inlineLinks[descSubstrings[2]].url} text={props.inlineLinks[descSubstrings[2]].text} key="2" />,
-            <React.Fragment key="3">
-                {descSubstrings[4]}
-            </React.Fragment>
-        ];
-        return descriptionParts;
-    } else {
-        // Description text does not include external link
-        return props.description;
-    }
-}
-
 
 function ProjectFeatured(props) {
     return (
@@ -36,9 +13,9 @@ function ProjectFeatured(props) {
                         </div>
                         <div className="col-md-6">
                             <h3 className="card-title">{props.title}</h3>
-                            <p className="card-text">
-                                {renderDescription(props)}
-                            </p>
+                            {/* <p className="card-text"> */}
+                            <Description innerHTML={props.description} />
+                            {/* </p> */}
                             <p><strong>Role:</strong> {props.role}</p>
                             {/* Wrapper class pushes button to bottom of card */}
                             <div className="mt-auto">
