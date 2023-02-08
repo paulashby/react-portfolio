@@ -31,7 +31,6 @@ function Contact() {
               tempora non quidem aperiam repellat cum voluptatem optio excepturi. Consectetur ex, minima iusto tenetur
               eaque harum?</p>
             <ContactForm />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit eligendi impedit, cupiditate.</p>
           </div>
 
         </div>

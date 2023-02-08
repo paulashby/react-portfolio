@@ -7,24 +7,13 @@ import Home from "./components/pages/Home";
 import ProjectGallery from "./components/pages/ProjectGallery";
 
 function App() {
-  const navLinks = [
-    {
-      title: "Project Gallery",
-      path: "/pages/projectgallery"
-    },
-    {
-      title: "Contact",
-      path: "/pages/contact"
-    }
-  ];
-
   return (
     <Router>
-      <Header navLinks={navLinks}/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/pages/projectgallery" element={<ProjectGallery />} />
-        <Route path="/pages/contact" element={<Contact />} />
+        <Route path="projectgallery" element={<ProjectGallery />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

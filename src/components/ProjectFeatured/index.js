@@ -10,7 +10,7 @@ function ProjectFeatured(props) {
                 <div className="card-body d-flex flex-column">
                     <div className="row">
                         <div className="col-md-6 mb-3">
-                            <img className="img-fluid" src={props.featuredImage} alt={`${props.descriptor} title graphic`} title={`${props.descriptor} preview`} />
+                            <img className="img-fluid" src={`${process.env.PUBLIC_URL}${props.featuredImage}`} alt={`${props.descriptor} title graphic`} title={`${props.descriptor} preview`} />
                         </div>
                         <div className="col-md-6">
                             <h3 className="card-title">{props.title}</h3>

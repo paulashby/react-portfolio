@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Navbar as ReactNavbar, Nav, Collapse } from 'bootstrap-4-react';
 import "./style.css";
 import icon from "../../images/icon-code.svg";
@@ -21,12 +21,27 @@ function Navbar(props) {
 
         <Collapse navbar id="navbarNav">
           <ReactNavbar.Nav className="text-right ml-auto mt-3 mt-lg-0">
+
             <Nav.Item>
-              <Nav.Link href="/pages/projectgallery">Project Gallery</Nav.Link>
+              <NavLink
+              to="projectgallery"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }>
+                Project Gallery
+              </NavLink>
             </Nav.Item>
+
             <Nav.Item>
-              <Nav.Link href="/pages/contact">Contact</Nav.Link>
+              <NavLink
+              to="contact"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }>
+                Contact
+              </NavLink>
             </Nav.Item>
+            
           </ReactNavbar.Nav>
         </Collapse>
       </ReactNavbar>

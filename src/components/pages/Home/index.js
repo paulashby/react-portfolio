@@ -4,6 +4,7 @@ import "./style.css";
 
 function Home() {
   return (
+    // <h1>Home</h1>
     <main className="container pl-5 pr-5">
       <section id="info" className="row">
 
@@ -44,7 +45,7 @@ function Home() {
               nostrum nemo praesentium neque odio dolores autem sed facilis alias quod, dolorum unde, nam nobis?</p>
 
             <h3>Contact</h3>
-            <p>If you&#39;d like to get in touch, please check my <Link to={"/pages/contact"}>Contact page</Link></p>
+            <p>If you&#39;d like to get in touch, please check my <Link to={"contact"}>Contact page</Link></p>
           </div>
 
         </div>
