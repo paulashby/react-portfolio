@@ -46,7 +46,7 @@ class ProjectGallery extends Component {
                     title={project.title}
                     descriptor={project.descriptor}
                     inlineLinks={project.inlineLinks}
-                    featuredImage={project.images.featured}
+                    teaserImage={project.images.teaser}
                     description={project.description}
                     role={project.role}
                     deployedLink={project.deployedLink}

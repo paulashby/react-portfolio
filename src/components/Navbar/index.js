@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar as ReactNavbar, Nav, Collapse } from 'bootstrap-4-react';
 import "./style.css";
+import icon from "../../images/icon-code.svg";
 
 function Navbar(props) {
 
@@ -10,7 +11,7 @@ function Navbar(props) {
         <Link to="/"
         className="navbar-brand">
           <img
-            src="/images/icon-code.svg"
+            src={icon}
             alt="Developer icon"
           />{" "}
           Paul Ashby

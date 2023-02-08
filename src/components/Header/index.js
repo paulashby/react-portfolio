@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import { Jumbotron as ReactJumbotron } from 'bootstrap-4-react';
 import "./style.css";
+import avatar from "../../images/paul.svg";
 
 function Header(props) {
   return (
@@ -25,7 +26,7 @@ function Header(props) {
               </div>
 
               <div className="col-12 col-sm-6 offset-sm-3">
-                <img src="/images/paul.svg" alt="Paul Ashby avatar" title="Avatar" />
+                <img src={avatar} alt="Paul Ashby avatar" title="Avatar" />
               </div>
 
             </div>

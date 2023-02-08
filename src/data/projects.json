@@ -4,7 +4,7 @@
         "title": "Game table system",
         "descriptor": "3rd Harmonic",
         "images": {
-            "teaser": "../images/webharmonics.jpg",
+            "teaser": "../images//webharmonics.jpg",
             "featured": "../images/harmonics-featured.jpg"
         },
         "description": "System to serve HTML5 games on multiplayer game tables. This proof of concept included the development of a WordPress backend that facilitated the delivery of games via a tiered subscription system.<br><br> I created a mediation layer that allowed developers to create content with their preferred HTML5 game engine. A small selection of games is provided as part of this demo version. <br><br>Please note that the app is not responsive as it was developed for game table displays. <br><br><strong>The demo is best viewed at a resolution of 1920 x 1080 pixels.</strong>",
