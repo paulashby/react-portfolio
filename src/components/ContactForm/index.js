@@ -37,7 +37,7 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div className="col-12">
+      <div className="col-12 p-0">
         <form className="form m-0 mb-3">
           <input
             value={this.state.firstName}
@@ -66,7 +66,7 @@ class Form extends Component {
             onChange={this.handleInputChange}
             placeholder="message"
           />
-          <button onClick={this.handleFormSubmit}>Submit</button>
+          <button className="btn btn-primary" onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
     );

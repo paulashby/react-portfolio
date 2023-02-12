@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import Project from "../../Project";
 import ProjectFeatured from "../../ProjectFeatured";
 import projects from "../../../data/projects.json";
@@ -14,6 +14,7 @@ function ProjectGallery() {
     }
   };
 
+
   return (
     <main className="container pl-5 pr-5">
 
@@ -24,7 +25,7 @@ function ProjectGallery() {
           <p>This selection of work includes front end and full stack projects. Technologies include HTML5, CSS, Javascript, PHP, WordPress and Processwire.</p>
         </div>
 
-        <div className="work-samples row">
+        <div className="row" id="work-samples">
 
           <Routes>
             {projects.map(project => {
@@ -35,10 +36,10 @@ function ProjectGallery() {
 
           <ul id="project-list" className="row ml-0 mr-0">
             {projects.map(project => {
-              return <li key={project.id} className="col-md-6 col-lg-4 mt-3 mb-3 project-link">
-                <Link to={project.name}>
+              return <li key={project.id} className={`col-md-6 col-lg-4 mt-3 mb-3 project-link`} id={project.name}>
+                <NavLink to={project.name}>
                   {<Project project={project} />}
-                </Link>
+                </NavLink>
               </li>
             })}
           </ul>

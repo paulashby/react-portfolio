@@ -13,23 +13,21 @@ class ProjectFeatured extends Component {
     componentDidUpdate = () => this.scrollToFeatured();
 
     render() {
-
-        const project = this.props.project;
-
+        
         return (
             <div className="col-xs-12 mt-3 mb-3" ref={(ref) => this._div = ref}>
-                <div key={project.id} className="card h-100 ml-3 mr-3">
+                <div key={this.props.project.id} className="card h-100 ml-3 mr-3">
                     <div className="card-body d-flex flex-column">
                         <div className="row">
                             <div className="col-md-6 mb-3">
-                                <img className="img-fluid" src={process.env.PUBLIC_URL + "/images/" + project.images.featured} alt={`${project.descriptor} title graphic`} title={`${project.descriptor} preview`} />
+                                <img className="img-fluid" src={process.env.PUBLIC_URL + "/images/" + this.props.project.images.featured} alt={`${this.props.project.descriptor} title graphic`} title={`${this.props.project.descriptor} preview`} />
                             </div>
                             <div className="col-md-6">
-                                <h3 className="card-title">{project.title}</h3>
-                                <Description innerHTML={project.description} />
-                                <p><strong>Role:</strong> {project.role}</p>
+                                <h3 className="card-title">{this.props.project.title}</h3>
+                                <Description innerHTML={this.props.project.description} />
+                                <p><strong>Role:</strong> {this.props.project.role}</p>
                                 <div className="mt-auto">
-                                    <DeployedLink url={project.deployedLink} size={project.size} viewDeployed={project.viewDeployed}/>                                
+                                    <DeployedLink url={this.props.project.deployedLink} size={this.props.project.size} viewDeployed={this.props.project.viewDeployed}/>                                
                                 </div>
                             </div>
                         </div>
