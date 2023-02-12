@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/";
 import Footer from "./components/Footer/";
-import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
 import ProjectGallery from "./components/pages/ProjectGallery";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="projectgallery" element={<ProjectGallery />} />
+        <Route path="projectgallery/*" element={<ProjectGallery />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />

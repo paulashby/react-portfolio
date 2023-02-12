@@ -1,9 +1,21 @@
+#project-list {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
 .card {
     border-color: var(--col-primary-muted);
 }
 
 .card-body {
     background-color: var(--col-primary-dark);
+}
+
+.card-title {
+    font-size: 1.2rem;
 }
 
 a:not(.btn-primary) {

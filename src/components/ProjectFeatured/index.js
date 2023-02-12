@@ -1,27 +1,27 @@
 import React from "react";
 import Description from "../Description";
 import DeployedLink from "../DeployedLink";
+
 import "./style.css";
 
 function ProjectFeatured(props) {
+
+    const project = props.project;
+    
     return (
         <div className="col-xs-12 mt-3 mb-3">
-            <div key={props.id} className="card h-100 ml-3 mr-3">
+            <div key={project.id} className="card h-100 ml-3 mr-3">
                 <div className="card-body d-flex flex-column">
                     <div className="row">
                         <div className="col-md-6 mb-3">
-                            {console.log("props.featuredImage", props.featuredImage)}
-                            <img className="img-fluid" src={process.env.PUBLIC_URL + "/images/" + props.featuredImage} alt={`${props.descriptor} title graphic`} title={`${props.descriptor} preview`} />
+                            <img className="img-fluid" src={process.env.PUBLIC_URL + "/images/" + project.images.featured} alt={`${project.descriptor} title graphic`} title={`${project.descriptor} preview`} />
                         </div>
                         <div className="col-md-6">
-                            <h3 className="card-title">{props.title}</h3>
-                            {/* <p className="card-text"> */}
-                            <Description innerHTML={props.description} />
-                            {/* </p> */}
-                            <p><strong>Role:</strong> {props.role}</p>
-                            {/* Wrapper class pushes button to bottom of card */}
+                            <h3 className="card-title">{project.title}</h3>
+                            <Description innerHTML={project.description} />
+                            <p><strong>Role:</strong> {project.role}</p>
                             <div className="mt-auto">
-                                <DeployedLink url={props.deployedLink} size={props.size} viewDeployed={props.viewDeployed}/>                                
+                                <DeployedLink url={project.deployedLink} size={project.size} viewDeployed={project.viewDeployed}/>                                
                             </div>
                         </div>
                     </div>
