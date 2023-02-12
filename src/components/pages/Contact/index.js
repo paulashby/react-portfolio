@@ -3,6 +3,7 @@ import ContactForm from "../../ContactForm";
 import "./style.css";
 
 function Contact() {
+  
   return (
     <main className="container pl-5 pr-5">
       <section id="info" className="row">

@@ -2,6 +2,7 @@ import React from "react";
 import sanitizeHtml from 'sanitize-html';
 
 function sanitize(dirty) {
+  
     // https://stackoverflow.com/questions/38663751/how-to-safely-render-html-in-react
     const clean = sanitizeHtml(dirty, {
         allowedTags: ['b', 'i', 'em', 'strong', 'a', 'br'],
