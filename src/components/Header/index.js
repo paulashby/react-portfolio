@@ -5,6 +5,7 @@ import "./style.css";
 import avatar from "../../images/paul.svg";
 
 function Header(props) {
+  
   return (
     <header>
 

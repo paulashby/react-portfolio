@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
+  
   return (
     <footer className="page-footer font-small pt-4 pb-4 bg-dark">
 
