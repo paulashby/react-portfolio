@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Project from "../../Project";
 import ProjectFeatured from "../../ProjectFeatured";
 import projects from "../../../data/projects.json";
+import "./style.css";
 
 function ProjectGallery() {
 
@@ -34,7 +35,7 @@ function ProjectGallery() {
 
           <ul id="project-list" className="row ml-0 mr-0">
             {projects.map(project => {
-              return <li key={project.id} className="col-md-6 col-lg-4 mt-3 mb-3">
+              return <li key={project.id} className="col-md-6 col-lg-4 mt-3 mb-3 project-link">
                 <Link to={project.name}>
                   {<Project project={project} />}
                 </Link>
