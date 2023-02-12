@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function Home() {
+  
   return (
-    // <h1>Home</h1>
     <main className="container pl-5 pr-5">
       <section id="info" className="row">
 

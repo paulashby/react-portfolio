@@ -5,6 +5,7 @@ function DeployedLink(props) {
 
   return (
     <>
+      {/* Which link will be shown depends on window width */}
       <a href={props.url} onClick={() => props.viewDeployed(props.url, props.size)} target="blank" className="btn btn-primary window-link">Visit site</a>
       <a href={props.url} target="blank" className="btn btn-primary tab-link">Visit site</a>
     </>    

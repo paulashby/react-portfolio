@@ -1,27 +1,18 @@
 import React, { Component } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import Project from "../../Project";
 import ProjectFeatured from "../../ProjectFeatured";
 import projects from "../../../data/projects.json";
 
 class ProjectGallery extends Component {
-  // Setting this.state.projects to the projects json array
-  state = {
-    projects,
-    featured: "1"
-  };
   
-  viewProject = id => {
-    this.setState({featured: id});
-    const section = document.getElementById("featured-head");
-    section.scrollIntoView( {behavior: "smooth", block: "start"} )
-  }
-
   viewDeployed = (url, size) => {
-      // If json entry has a window size, enter that here
-      if(size.length) { window.open(url,"pagename",`resizable,${size}`); 
+    // Use window size if provided
+    if (size.length) {
+      window.open(url, "pagename", `resizable,${size}`);
     }
   }
-
+  
   render() {
     return (
       <main className="container pl-5 pr-5">
@@ -35,48 +26,21 @@ class ProjectGallery extends Component {
 
           <div className="work-samples row">
 
-          {/* Render featured project at top */}
-          {
-              this.state.projects
-              .filter(project => project.id === this.state.featured)
-              .map(project => {
-                  return <ProjectFeatured
-                    key={project.id}
-                    id={project.id}
-                    title={project.title}
-                    descriptor={project.descriptor}
-                    inlineLinks={project.inlineLinks}
-                    featuredImage={project.images.featured}
-                    description={project.description}
-                    role={project.role}
-                    deployedLink={project.deployedLink}
-                    viewDeployed= {this.viewDeployed}
-                    size={project.size}
-                  />
+            <Routes>
+              {
+                projects.map(project => <Route path={project.name} key={project.id} element={<ProjectFeatured project={project}/>} />)
+              }
+            </Routes>
             
-              })
-            }            
-
-            {/* Render project list */}
-            {
-              this.state.projects
-              .filter(project => project.id !== this.state.featured)
-              .map(project => {
-                  return <Project
-                    key={project.id}
-                    id={project.id}
-                    title={project.title}
-                    descriptor={project.descriptor}
-                    inlineLinks={project.inlineLinks}
-                    teaserImage={project.images.teaser}
-                    description={project.description}
-                    role={project.role}
-                    viewProject={this.viewProject}
-                  />
-            
-              })
-            }
-
+            <ul id="project-list" className="row ml-0 mr-0">
+              {projects.map(project => {
+                return <li key={project.id} className="col-md-6 col-lg-4 mt-3 mb-3">
+                  <Link to={project.name}>
+                    {<Project project={project} />}
+                  </Link>
+                </li>
+              })}
+            </ul>
           </div>
         </section>
       </main>
