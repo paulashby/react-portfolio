@@ -1,12 +1,7 @@
 .project-link a:hover {
   text-decoration: none;
 }
-.harmonics #harmonics,
-.stmonday #stmonday,
-.floodwatch #floodwatch,
-.paperbird #paperbird,
-.opentriviata #opentriviata,
-.primitive #primitive {
-  opacity: 0.3;
+.project-link .active {
+  opacity: 0.2;
   pointer-events: none;
 }
