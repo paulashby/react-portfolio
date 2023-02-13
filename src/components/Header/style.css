@@ -1,4 +1,4 @@
 .jumbotron {
-    background-color: var(--col-primary-bright);
+    background-color: var(--col-primary-bright) !important;
 }
 
