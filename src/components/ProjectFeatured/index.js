@@ -8,12 +8,12 @@ class ProjectFeatured extends Component {
     scrollToFeatured() {
         this._div.scrollIntoView({ behavior: 'smooth' });
     }
-    
+
     componentDidMount = () => this.scrollToFeatured();
     componentDidUpdate = () => this.scrollToFeatured();
 
     render() {
-        
+
         return (
             <div className="col-xs-12 mt-3 mb-3" ref={(ref) => this._div = ref}>
                 <div key={this.props.project.id} className="card h-100 ml-3 mr-3">
@@ -27,11 +27,11 @@ class ProjectFeatured extends Component {
                                 <Description innerHTML={this.props.project.description} />
                                 <p><strong>Role:</strong> {this.props.project.role}</p>
                                 <div className="mt-auto">
-                                    <DeployedLink url={this.props.project.deployedLink} size={this.props.project.size} viewDeployed={this.props.project.viewDeployed}/>                                
+                                    <DeployedLink url={this.props.project.deployedLink} size={this.props.project.size} viewDeployed={this.props.project.viewDeployed} />
+                                    <a href={this.props.project.github} target="blank" className="btn btn-primary ml-2">Github repo</a>
                                 </div>
                             </div>
                         </div>
-    
                     </div>
                 </div>
             </div>
