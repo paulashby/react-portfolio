@@ -21,10 +21,7 @@ function Footer() {
           <div id="legal" className="col-md-3 pl-0 pr-0">
             <ul className="pl-0">
               <li>
-                <Link to={"/pages/terms"}>Terms of Use</Link>
-              </li>
-              <li>
-                <Link to={"/pages/privacy"}>Privacy Policy</Link>
+                <Link to={"./docs/PaulAshbyCV.pdf"} className="download" target="_blank" download>Download my CV</Link>
               </li>
               <li>
                 All content &#169; Paul Ashby, 2022

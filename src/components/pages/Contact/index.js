@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../../ContactForm";
+import MailToLink from "../../MailToLink";
 import "./style.css";
 
 function Contact() {
@@ -20,9 +21,9 @@ function Contact() {
           <div id="skills" className="col-md-3 mt-3 mb-3">
             <h3>Other Channels</h3>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item pl-0">LinkedIn</li>
-              <li className="list-group-item pl-0">GitHub</li>
-              <li className="list-group-item pl-0">paul@primitive.co</li>
+              <li className="list-group-item pl-0"><a href="https://linkedin.com/in/paulashbylondon" target="blank">LinkedIn</a></li>
+              <li className="list-group-item pl-0"><a href="https://github.com/paulashby" target="blank">GitHub</a></li>
+              <li className="list-group-item pl-0"><MailToLink label="Email" mailto="mailto:paul@primitive.co" /></li>
             </ul>
           </div>
 

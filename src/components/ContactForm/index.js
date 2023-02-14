@@ -20,18 +20,45 @@ class Form extends Component {
     });
   };
 
-  handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-
-    // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-    alert(`Hello ${this.state.firstName} ${this.state.lastName} ${this.state.email} ${this.state.message}`);
-    this.setState({
-      firstName: "",
-      lastName: "",
-      email: "",
-      message: ""
-    });
+  // Based on https://www.techomoro.com/submit-a-form-data-to-rest-api-in-a-react-app/
+  handleFormSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      let res = await fetch("https://formkeep.com/f/ef9baeb54a3e", {
+        method: "POST",
+        body: JSON.stringify({
+          firstName: this.state.firstName,
+          lastName: this.state.lastName,
+          email: this.state.email,
+          message: this.state.message,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      });
+      
+      const stateBase = {
+        firstName: "",
+        lastName: "",
+        email: ""
+      }
+      console.log(res);
+      if (res.status === 200) {
+        this.setState({
+          message: "Thanks for getting in touch",
+          ...stateBase
+        })
+      } else {
+        this.setState({
+          // Formspree no longer accepts AJAX form submissions, so simulating success for purposes of this exercise
+          message: "An error occurred while submitting the form",
+          ...stateBase
+        })
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   render() {

@@ -25,7 +25,7 @@ code {
 /* End React syles */
 
 body {
-  background-color: var(--col-primary);
+  background-color: var(--col-primary) !important;
 }
 
 h3 {
