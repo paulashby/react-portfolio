@@ -56,7 +56,7 @@
         "description": "Site built in PHP using the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. I created a number of bespoke Processwire modules to allow the shop owner to easily manage content &amp; orders and to read messages submitted via the site contact form. The styles were written in SASS using the BEM methodology.",
         "role": "Sole developer, designer",
         "deployedLink": "https://www.paperbirdpublishing.co.uk/",
-        "github": "https://github.com/paulashby/harmonicsGameEngine",
+        "github": "https://github.com/paulashby/paperbird-dev",
         "size": ""
     },
     {

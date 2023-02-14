@@ -24,7 +24,7 @@ class Form extends Component {
   handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://formkeep.com/f/ef9baeb54a3e", {
+      let res = await fetch("https://mailthis.to/paulashby", {
         method: "POST",
         body: JSON.stringify({
           firstName: this.state.firstName,
