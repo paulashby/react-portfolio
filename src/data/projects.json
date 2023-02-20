@@ -83,7 +83,7 @@
             "teaser": "webprimitive.jpg",
             "featured": "primitive-featured.jpg"
         },
-        "description": "Website promoting my freelance design and development services. The site runs on the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quo unde eum, libero dolorum cupiditate maiores dicta impedit veniam obcaecati.",
+        "description": "Website promoting my freelance development and design services. The site runs on the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quo unde eum, libero dolorum cupiditate maiores dicta impedit veniam obcaecati.",
         "role": "Sole developer, designer",
         "deployedLink": "https://www.primitive.co",
         "github": "https://github.com/paulashby/Open-Triviata-Synchroniser",
