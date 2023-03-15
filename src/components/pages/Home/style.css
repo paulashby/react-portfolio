@@ -6,3 +6,15 @@
 background-color: transparent;
 border-color: var(--col-primary-mid);
 }
+
+#about li {
+    list-style: disc;
+}
+
+#about li::marker {
+    color: var(--col-primary-light);
+}
+
+#status {
+    font-size: 1.1rem;
+}

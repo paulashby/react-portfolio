@@ -8,7 +8,7 @@
             "teaser": "webharmonics.jpg",
             "featured": "harmonics-featured.jpg"
         },
-        "description": "System to serve HTML5 games on multiplayer game tables. This proof of concept included the development of a WordPress backend that facilitated the delivery of games via a tiered subscription system.<br><br> I created a mediation layer that allowed developers to create content with their preferred HTML5 game engine. A small selection of games is provided as part of this demo version. <br><br>Please note that the app is not responsive as it was developed for game table displays. <br><br><strong>The demo is best viewed at a resolution of 1920 x 1080 pixels.</strong>",
+        "description": "<p>App to manage and deploy HTML5 games on multiplayer game tables. This proof of concept made use of a WordPress backend that facilitated the delivery of games via a tiered subscription system.</p><p>The <a href='https://github.com/paulashby/harmonicsGameEngine/blob/main/moduleTest/vt-api-1.7.js' target='_blank'>VTAPI component</a> allowed developers to create content with their preferred HTML5 game engine. A small selection of games is provided as part of this demo version.</p><p>Please note that the app is not responsive as it was developed for game table displays.</p><p><strong>The demo is best viewed at a resolution of 1920 x 1080 pixels.</strong></p>",
         "role": "Sole developer, designer",
         "deployedLink": "https://harmonics.primitive.co/",
         "github": "https://github.com/paulashby/harmonicsGameEngine",
@@ -23,7 +23,7 @@
             "teaser": "webstmonday.jpg",
             "featured": "stmonday-featured.jpg"
         },
-        "description": "Online shop for golf clothing start up. This is a WordPress site making use of the WooCommerce PlugIn for sales functionality. GDPR-compliant analytics are provided by Matomo. The site is running on a Virtual Private Server which I administer via SSH and a Plesk control panel.",
+        "description": "<p>Online shop for golf clothing start up. This is a WordPress site making use of the WooCommerce PlugIn for sales functionality. GDPR-compliant analytics are provided by Matomo. The site is running on a Virtual Private Server which I administer via SSH and a Plesk control panel.</p>",
         "role": "Sole developer, server administrator",
         "deployedLink": "https://stmonday.xyz/",
         "github": "https://github.com/paulashby/stmonday",
@@ -38,8 +38,8 @@
             "teaser": "webfloodwatch.jpg",
             "featured": "floodwatch-featured.jpg"
         },
-        "description": "<strong>Team project:</strong> a browser dashboard app enabling users to search by location for real time flood warnings issued by The Environment Agency (EA), in England.<br><br>On load, the dashboard features a map which showing a general view of all current flood warnings.<br><br>If data is avalable for a location, the map zooms in to provide the user with more granular data.",
-        "role": "Sole developer, designer, illustrator",
+        "description": "<p><strong>Team project:</strong> a browser dashboard app enabling users to search by location for real time flood warnings issued by The Environment Agency (EA), in England.<br><br>On load, the dashboard features a map which showing a general view of all current flood warnings.<br><br>If data is avalable for a location, the map zooms in to provide the user with more granular data.</p>",
+        "role": "Developer, designer",
         "deployedLink": "https://sam010000101.github.io/flood-watch/",
         "github": "https://github.com/Sam010000101/flood-watch",
         "size": ""
@@ -53,7 +53,7 @@
             "teaser": "webpaperbird.gif",
             "featured": "paperbird-featured.jpg"
         },
-        "description": "Site built in PHP using the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. I created a number of bespoke Processwire modules to allow the shop owner to easily manage content &amp; orders and to read messages submitted via the site contact form. The styles were written in SASS using the BEM methodology.",
+        "description": "<p>Site built in PHP using the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. I created a number of bespoke Processwire modules to allow the shop owner to easily manage content &amp; orders and to read messages submitted via the site contact form. The styles were written in SASS using the BEM methodology.</p>",
         "role": "Sole developer, designer",
         "deployedLink": "https://www.paperbirdpublishing.co.uk/",
         "github": "https://github.com/paulashby/paperbird-dev",
@@ -68,7 +68,7 @@
             "teaser": "webotriviata.jpg",
             "featured": "opentriviata-featured.jpg"
         },
-        "description": "I created an API serving questions sourced from <a href='https://opentdb.com/' target='blank'>the Open Trivia Database</a> with the useful addition of ID numbers. This involved writing a PHP program to synchronise the data an API that accepts the same queries as the original Open TriviaAPI. The webpage makes use of the UIKit CSS framework.",
+        "description": "<p>I created an API serving questions sourced from <a href='https://opentdb.com/' target='blank'>the Open Trivia Database</a> with the useful addition of ID numbers. This involved writing a PHP program to synchronise the data an API that accepts the same queries as the original Open TriviaAPI. The webpage makes use of the UIKit CSS framework.</p>",
         "role": "Sole developer, designer",
         "deployedLink": "https://otriviata.com/",
         "github": "https://github.com/paulashby/open-triviata-api",
@@ -76,17 +76,17 @@
     },
     {
         "id": 6,
-        "title": "Primitive website",
-        "name": "primitive",
-        "descriptor": "Primitive",
+        "title": "To-go-list website",
+        "name": "togolist",
+        "descriptor": "To-go-list",
         "images": {
-            "teaser": "webprimitive.jpg",
-            "featured": "primitive-site-featured.jpg"
+            "teaser": "togo.jpg",
+            "featured": "togo-featured.jpg"
         },
-        "description": "Website promoting my freelance development and design services. The site runs on the <a href='https://processwire.com/' target='blank'>Processwire</a> content management system. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quo unde eum, libero dolorum cupiditate maiores dicta impedit veniam obcaecati.",
-        "role": "Sole developer, designer",
-        "deployedLink": "https://www.primitive.co",
-        "github": "https://github.com/paulashby/Open-Triviata-Synchroniser",
+        "description": "<p><strong>Team project:</strong> travel dashboard that presents users with a list of recommended tourist activities for a given destination. These can be dynamically added to the user's itinerary to build the perfect trip. To-go-list also displays weather data for the preceding twelve months and provides a handy currency converter that allows users to check current exchange rates</p>",
+        "role": "Developer, designer",
+        "deployedLink": "https://to-go-list.netlify.app/",
+        "github": "https://github.com/paulashby/to-go-list",
         "size": ""
     }
 ]

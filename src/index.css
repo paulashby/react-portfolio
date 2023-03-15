@@ -28,9 +28,16 @@ body {
   background-color: var(--col-primary) !important;
 }
 
+h3, h4 {
+  color: var(--col-primary-light);
+}
+
 h3 {
   font-size: 1.4rem;
-  color: var(--col-primary-mid);
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 form .btn-primary,
@@ -46,7 +53,7 @@ form .btn-primary:hover,
 }
 
 a:not(.btn-primary) {
-  color: var(--col-primary-bright);
+  color: var(--col-primary-light);
 }
 
 /* Glow on button hover */

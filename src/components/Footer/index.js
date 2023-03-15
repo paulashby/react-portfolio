@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
+
+  const year = new Date().getFullYear();
   
   return (
     <footer className="page-footer font-small pt-4 pb-4 bg-dark">
@@ -24,7 +26,7 @@ function Footer() {
                 <Link to={"./docs/PaulAshbyCV.pdf"} className="download" target="_blank" download>Download my CV</Link>
               </li>
               <li>
-                All content &#169; Paul Ashby, 2022
+                All content &#169; Paul Ashby, {year}
               </li>
             </ul>
           </div>
