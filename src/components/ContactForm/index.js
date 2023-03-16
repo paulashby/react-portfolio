@@ -51,7 +51,6 @@ class Form extends Component {
         })
       } else {
         this.setState({
-          // Formspree no longer accepts AJAX form submissions, so simulating success for purposes of this exercise
           message: "An error occurred while submitting the form",
           ...stateBase
         })
@@ -62,32 +61,35 @@ class Form extends Component {
   };
 
   render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div className="col-12 p-0">
         <form className="form m-0 mb-3">
-          <input
+          <input 
+            className="rounded p-2 mb-3"
             value={this.state.firstName}
             name="firstName"
             onChange={this.handleInputChange}
             type="text"
             placeholder="First Name"
           />
-          <input
+          <input 
+            className="rounded p-2 mb-3"
             value={this.state.lastName}
             name="lastName"
             onChange={this.handleInputChange}
             type="text"
             placeholder="Last Name"
           />
-          <input
+          <input 
+            className="rounded p-2 mb-3"
             value={this.state.email}
             name="email"
             onChange={this.handleInputChange}
             type="email"
             placeholder="Email"
           />
-          <textarea
+          <textarea 
+            className="rounded p-2 mb-3"
             value={this.state.message}
             name="message"
             onChange={this.handleInputChange}

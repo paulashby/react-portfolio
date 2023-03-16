@@ -11,9 +11,9 @@ function Footer() {
 
       <div className="footer-content container pl-5 pr-5 mt-3 mb-5">
 
-        <div className="row">
+        <div className="row no-gutters">
 
-          <div id="testimonials" className="order-md-2 col-md-7 offset-md-1 pl-0 pr-0 mt-3 mb-3">
+          <div id="testimonials" className="order-md-2 col-md-8 offset-md-1 pl-0 pr-0 mt-3 mb-3">
             <blockquote className="font-italic">
               &ldquo;Paul is outstandingly creative and a pleasure to work with. I cannot praise his talents or his attitude highly enough.&rdquo;
             </blockquote>

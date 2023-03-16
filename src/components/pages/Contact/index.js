@@ -1,41 +1,34 @@
 import React from "react";
 import ContactForm from "../../ContactForm";
-import MailToLink from "../../MailToLink";
 import "./style.css";
 
 function Contact() {
   
   return (
     <main className="container pl-5 pr-5">
-      <section id="info" className="row">
+      <section id="info" className="row no-gutters">
 
         <div id="info-intro" className="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
           <h2>Getting in Touch</h2>
-          <p>Here are some more details about my skills and history. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quibusdam voluptas consequatur temporibus eaque! Est accusantium eligendi voluptatum culpa totam?
-            Consequatur.</p>
         </div>
 
-        <div className="info-entries row">
+        <div className="col-12">
+          <div className="info-entries row w-100 ml-0 ml-sm-0">
+              <div id="skills" className="col-md-3 p-0 my-3">
+                <h3>Social</h3>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item pl-0"><a href="https://linkedin.com/in/paulashbylondon" target="blank">LinkedIn</a></li>
+                  <li className="list-group-item pl-0"><a href="https://github.com/paulashby" target="blank">GitHub</a></li>
+                </ul>
+              </div>
 
-          <div id="skills" className="col-md-3 mt-3 mb-3">
-            <h3>Other Channels</h3>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item pl-0"><a href="https://linkedin.com/in/paulashbylondon" target="blank">LinkedIn</a></li>
-              <li className="list-group-item pl-0"><a href="https://github.com/paulashby" target="blank">GitHub</a></li>
-              <li className="list-group-item pl-0"><MailToLink label="Email" mailto="mailto:paul@primitive.co" /></li>
-            </ul>
-          </div>
+              <div id="about" className="col-md-8 offset-md-1 my-3 px-0">
+                <h3>Contact Form</h3>
+                <ContactForm />
+              </div>
 
-          <div id="about" className="col-md-8 offset-md-1 mt-3 mb-3">
-            <h3>Contact Form</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit eligendi impedit, cupiditate, quo
-              tempora non quidem aperiam repellat cum voluptatem optio excepturi. Consectetur ex, minima iusto tenetur
-              eaque harum?</p>
-            <ContactForm />
-          </div>
-
-        </div>
+            </div>
+        </div>        
 
         </section>
     </main>    
