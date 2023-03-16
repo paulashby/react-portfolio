@@ -7,7 +7,7 @@ import icon from "../../images/icon-code.svg";
 function Navbar(props) {
 
   return (
-      <ReactNavbar className="navbar-expand-lg navbar-dark bg-dark">
+      <ReactNavbar className="navbar-expand navbar-dark bg-dark">
         <Link to="/"
         className="navbar-brand">
           <img
@@ -20,7 +20,7 @@ function Navbar(props) {
         <ReactNavbar.Toggler target="#navbarNav" />
 
         <Collapse navbar id="navbarNav">
-          <ReactNavbar.Nav className="text-right ml-auto mt-3 mt-lg-0">
+          <ReactNavbar.Nav className="text-right ml-auto mt-lg-0">
 
             <Nav.Item>
               <NavLink
@@ -28,7 +28,7 @@ function Navbar(props) {
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }>
-                Project Gallery
+                Work
               </NavLink>
             </Nav.Item>
 
