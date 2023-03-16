@@ -23,7 +23,6 @@ function Home() {
               <li className="list-group-item pl-0">Bootstrap</li>
               <li className="list-group-item pl-0">JavaScript</li>
               <li className="list-group-item pl-0">jQuery</li>
-              <li className="list-group-item pl-0">Node.js</li>
               <li className="list-group-item pl-0">React.js</li>
               <li className="list-group-item pl-0">WordPress CMS</li>
               <li className="list-group-item pl-0">Processwire CMS</li>
@@ -33,7 +32,6 @@ function Home() {
               <li className="list-group-item pl-0">Adobe Photoshop</li>
               <li className="list-group-item pl-0">Adobe Illustrator</li>
               <li className="list-group-item pl-0">Adobe InDesign</li>
-              <li className="list-group-item pl-0">Blender 3D</li>
             </ul>
           </div>
 
@@ -51,35 +49,11 @@ function Home() {
 
 
             <h3>Experience</h3>
-            <p className="mb-3">The <Link to={"projectgallery"}>Project Gallery</Link> showcases examples of some of the web sites I've designed and developed.</p>
-
-            <h4>Freelance Interactive Developer</h4>
-            <p>I've also developed a number of interactive applications for use in public spaces, including the multi-award-winning permanent exhibition on board the Cutty Sark.
-              Projects required:
-            </p>
             <ul className="pl-0 mb-4">
-              <li className="ml-3 mb-2">Utilisation of art direction skills to ensure visual consistency with wider design scheme</li>
-              <li className="ml-3 mb-2">Creation of visual assets for entire projects</li>
-              <li className="ml-3 mb-2">Incorporation of additional technologies to extend Flash capabilities</li>
-              <li className="ml-3 mb-2">Research and implemention of animation optimisations for full screen graphics</li>
-            </ul>
-
-            <h4>Freelance Exhibition Designer</h4>
-            <p>Graphic design for many high profile museum exhibitions as subcontractor for <a href="https://designmap.co.uk/" target="blank" >Designmap</a>.</p>
-            <ul className="pl-0 mb-4">
-              <li className="ml-3 mb-2">Developed overall graphic identities</li>
-              <li className="ml-3 mb-2">Presented concepts and liaised with client throughout process</li>
-              <li className="ml-3 mb-2">Attended site visits with 3D designers and production contractors</li>
-              <li className="ml-3 mb-2">Collaborated closely with curation staff on production of graphics</li>
-            </ul>
-
-            <h4>Art Director of 20-strong Art department</h4>
-            <p>Graphic design for many high profile museum exhibitions as subcontractor for <a href="https://designmap.co.uk/" target="blank" >Designmap</a>.</p>
-            <ul className="pl-0 mb-4">
-              <li className="ml-3 mb-2">Improved Art Department efficiency by implementing a system whereby newly-recruited junior designers produced the various forms and marketing materials required for new project launches. This allowed Art Editors to focus on more creative tasks and had the added benefit of streamlining the recruitment and mentoring process</li>
-              <li className="ml-3 mb-2">Art directed and oversaw the running of many of the company’s most successful titles</li>
-              <li className="ml-3 mb-2">Ensured design teams met deadlines and were adequately staffed</li>
-              <li className="ml-3 mb-2">Liaised with management and attended weekly strategy meetings</li>
+              <li className="ml-3 mb-2">Development of commercial websites making use of PHP, HTML5, CSS3, JavaScript and jQuery</li>
+              <li className="ml-3 mb-2">Development of interactive applications for use in public spaces, including for the multi-award-winning exhibition on board the Cutty Sark</li>
+              <li className="ml-3 mb-2">Graphic design for many high profile museum exhibitions working as subcontractor for <a href="https://designmap.co.uk/" target="blank" >Designmap</a></li>
+              <li className="ml-3 mb-2">Two years working as Art Director of 20-strong Art department</li>
             </ul>
 
             <h3>Contact</h3>
