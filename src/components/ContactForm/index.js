@@ -67,7 +67,7 @@ class Form extends Component {
   render() {
     return (
       <div className="col-12 p-0">
-        <p className="my-4"><span className={this.state.success.length > 0 ? "text-white bg-success rounded p-3" : ""}>{this.state.success}</span><span className={this.state.error.length > 0 ? "text-white bg-danger rounded p-3" : ""}>{this.state.error}</span></p>
+        <p className="my-4"><span className={this.state.success.length > 0 ? "text-white rounded p-2 border border-success" : ""}>{this.state.success}</span><span className={this.state.error.length > 0 ? "text-white rounded p-2 border border-danger" : ""}>{this.state.error}</span></p>
         <form className="form m-0 mb-3">
           <input
             className="rounded p-2 mb-3"
