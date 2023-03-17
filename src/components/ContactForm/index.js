@@ -3,97 +3,97 @@ import "./style.css";
 
 class Form extends Component {
   // Setting the component's initial state
-  state = {
-    firstName: "",
-    lastName: "",
+  stateBase = {
+    name: "",
     email: "",
-    message: ""
+    message: "",
+    error: "",
+    success: ""
+  };
+  state = {
+    ...this.stateBase
   };
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     const { name, value } = event.target;
 
-    // Updating the input's state
+    // Update the input's state
     this.setState({
       [name]: value
     });
   };
 
-  // Based on https://www.techomoro.com/submit-a-form-data-to-rest-api-in-a-react-app/
   handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://mailthis.to/paulashby", {
-        method: "POST",
-        body: JSON.stringify({
-          firstName: this.state.firstName,
-          lastName: this.state.lastName,
-          email: this.state.email,
-          message: this.state.message,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      });
+
+      // Use FormData Object to allow PHP to read fetch data as if it's a regular form
+      let fData = new FormData();
+      fData.append("name", this.state.name);
+      fData.append("email", this.state.email);
+      fData.append("message", this.state.message);
+      let res = await fetch("https://primitive.co/paulashby/contact.php", {method: "POST", body: fData});
       
-      const stateBase = {
-        firstName: "",
-        lastName: "",
-        email: ""
-      }
-      console.log(res);
       if (res.status === 200) {
         this.setState({
-          message: "Thanks for getting in touch",
-          ...stateBase
-        })
+          ...this.stateBase,
+          success: "Thanks for getting in touch",
+        });
+
       } else {
         this.setState({
-          message: "An error occurred while submitting the form",
-          ...stateBase
-        })
+          ...this.stateBase,
+          error: res.statusText
+        });
       }
+
     } catch (err) {
-      console.log(err);
+      this.setState({
+        ...this.stateBase,
+        error: "An error occurred while submitting the form"
+      });
     }
   };
+
+  handleFocus = () => {
+      this.setState({
+      ...this.state,
+      error: "",
+      success: ""
+    })
+  }
 
   render() {
     return (
       <div className="col-12 p-0">
+        <p className="my-4"><span className={this.state.success.length > 0 ? "text-white bg-success rounded p-3" : ""}>{this.state.success}</span><span className={this.state.error.length > 0 ? "text-white bg-danger rounded p-3" : ""}>{this.state.error}</span></p>
         <form className="form m-0 mb-3">
-          <input 
+          <input
             className="rounded p-2 mb-3"
-            value={this.state.firstName}
-            name="firstName"
+            value={this.state.name}
+            name="name"
             onChange={this.handleInputChange}
+            onFocus={this.handleFocus}
             type="text"
-            placeholder="First Name"
+            placeholder="Name"
           />
-          <input 
-            className="rounded p-2 mb-3"
-            value={this.state.lastName}
-            name="lastName"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="Last Name"
-          />
-          <input 
+          <input
             className="rounded p-2 mb-3"
             value={this.state.email}
             name="email"
             onChange={this.handleInputChange}
+            onFocus={this.handleFocus}
             type="email"
             placeholder="Email"
           />
-          <textarea 
+          <textarea
             className="rounded p-2 mb-3"
             value={this.state.message}
             name="message"
             onChange={this.handleInputChange}
-            placeholder="message"
+            onFocus={this.handleFocus}
+            placeholder="Message"
           />
           <button className="btn btn-primary" onClick={this.handleFormSubmit}>Submit</button>
         </form>
