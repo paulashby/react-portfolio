@@ -10,7 +10,7 @@ function Home() {
 
         <div id="info-intro" className="col-xs-12 col-sm-12 col-lg-4 offset-lg-4 text-center text-lg-left">
           <p id="status" className="text-lg">I recently earned an edX certificate in front end development, where I honed my HTML, CSS and JavaScript skills.
-            Course projects also involved the use of server APIs, React.js, Bootstrap and Tailwind CSS.</p>
+            Course projects also involved the use of server APIs, React, Bootstrap and Tailwind CSS.</p>
         </div>
 
         <div className="col-12">
@@ -23,7 +23,7 @@ function Home() {
                 <li className="list-group-item pl-0">Bootstrap</li>
                 <li className="list-group-item pl-0">JavaScript</li>
                 <li className="list-group-item pl-0">jQuery</li>
-                <li className="list-group-item pl-0">React.js</li>
+                <li className="list-group-item pl-0">React</li>
                 <li className="list-group-item pl-0">WordPress CMS</li>
                 <li className="list-group-item pl-0">Processwire CMS</li>
                 <li className="list-group-item pl-0">PHP</li>
