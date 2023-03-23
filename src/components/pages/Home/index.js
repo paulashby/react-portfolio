@@ -36,7 +36,7 @@ function Home() {
             </div>
 
             <div id="about" className="col-md-8 offset-md-1 my-3 px-0">
-              <h3>Interpersonal Skills</h3>
+              <h3>Personal Skills</h3>
               <ul className="pl-0">
                 <li className="ml-3 mb-2">Creativity</li>
                 <li className="ml-3 mb-2">Verbal communication</li>
