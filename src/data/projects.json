@@ -40,8 +40,8 @@
         },
         "description": "<p><strong>Team project:</strong> a browser dashboard app enabling users to search by location for real time flood warnings issued by The Environment Agency (EA), in England.<br><br>On load, the dashboard features a map which showing a general view of all current flood warnings.<br><br>If data is avalable for a location, the map zooms in to provide the user with more granular data.</p>",
         "role": "Developer, designer",
-        "deployedLink": "https://sam010000101.github.io/flood-watch/",
-        "github": "https://github.com/Sam010000101/flood-watch",
+        "deployedLink": "https://paulashby.github.io/flood-watch/",
+        "github": "hhttps://github.com/paulashby/flood-watch",
         "size": ""
     },
     {
