@@ -53,7 +53,7 @@ function Home() {
                 <li className="ml-3 mb-2">Development of commercial websites making use of PHP, HTML5, CSS3, JavaScript and jQuery</li>
                 <li className="ml-3 mb-2">Development of interactive applications for use in public spaces, including for the multi-award-winning exhibition on board the Cutty Sark</li>
                 <li className="ml-3 mb-2">Graphic design for many high profile museum exhibitions working as subcontractor for <a href="https://designmap.co.uk/" target="blank" >Designmap</a></li>
-                <li className="ml-3 mb-2">Two years working as Art Director of 20-strong Art department</li>
+                <li className="ml-3 mb-2">Four years working as Art Director of 20-strong Art department</li>
               </ul>
 
               <h3>Contact</h3>
