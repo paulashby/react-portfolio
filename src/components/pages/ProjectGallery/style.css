@@ -1,7 +1,6 @@
 .project-link a:hover {
   text-decoration: none;
 }
-.project-link .active {
-  opacity: 0.2;
-  pointer-events: none;
+.project-link.active {
+  display: none;
 }

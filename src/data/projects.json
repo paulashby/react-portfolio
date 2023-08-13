@@ -31,21 +31,6 @@
     },
     {
         "id": 3,
-        "title": "Flood Watch app",
-        "name": "floodwatch",
-        "descriptor": "Flood Watch",
-        "images": {
-            "teaser": "webfloodwatch.jpg",
-            "featured": "floodwatch-featured.jpg"
-        },
-        "description": "<p><strong>Team project:</strong> a browser dashboard app enabling users to search by location for real time flood warnings issued by The Environment Agency (EA), in England.<br><br>On load, the dashboard features a map which showing a general view of all current flood warnings.<br><br>If data is avalable for a location, the map zooms in to provide the user with more granular data.</p>",
-        "role": "Developer, designer",
-        "deployedLink": "https://paulashby.github.io/flood-watch/",
-        "github": "hhttps://github.com/paulashby/flood-watch",
-        "size": ""
-    },
-    {
-        "id": 4,
         "title": "Paperbird website",
         "name": "paperbird",
         "descriptor": "Paperbird",
@@ -60,7 +45,7 @@
         "size": ""
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "Open Triviata Database",
         "name": "opentriviata",
         "descriptor": "Open Triviata",
@@ -72,21 +57,6 @@
         "role": "Sole developer, designer",
         "deployedLink": "https://otriviata.com/",
         "github": "https://github.com/paulashby/open-triviata-api",
-        "size": ""
-    },
-    {
-        "id": 6,
-        "title": "To-go-list website",
-        "name": "togolist",
-        "descriptor": "To-go-list",
-        "images": {
-            "teaser": "togo.jpg",
-            "featured": "togo-featured.jpg"
-        },
-        "description": "<p><strong>Team project:</strong> travel dashboard that presents users with a list of recommended tourist activities for a given destination. These can be dynamically added to the user's itinerary to build the perfect trip. To-go-list also displays weather data for the preceding twelve months and provides a handy currency converter that allows users to check current exchange rates</p>",
-        "role": "Developer, designer",
-        "deployedLink": "https://to-go-list.netlify.app/",
-        "github": "https://github.com/paulashby/to-go-list",
         "size": ""
     }
 ]

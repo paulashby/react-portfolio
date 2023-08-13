@@ -2,10 +2,11 @@ import React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import Project from "../../Project";
 import ProjectFeatured from "../../ProjectFeatured";
-import projects from "../../../data/projects.json";
 import "./style.css";
 
-function ProjectGallery() {
+function ProjectGallery(props) {
+    
+  const projects = props.projects;
 
   const viewDeployed = (url, size) => {
     // Use window size if provided
@@ -34,15 +35,16 @@ function ProjectGallery() {
             })}
           </Routes>
 
-          <ul id="project-list" className="row ml-0 mr-0">
-            {projects.map(project => {
-              return <li key={project.id} className={`col-md-6 col-lg-4 mt-3 mb-3 project-link`} id={project.name}>
-                <NavLink to={project.name}>
+          <div id="project-overview" className="row ml-0 mr-0">
+            {projects.map((project, i) => {
+                return <NavLink 
+                to={project.name}
+                className={i === 0 ? `col-md-6 col-lg-4 mt-3 mb-3 project-link` :  `col-md-6 col-lg-4 mt-3 mb-3 project-link`}
+                >
                   {<Project project={project} />}
                 </NavLink>
-              </li>
             })}
-          </ul>
+          </div>
         </div>
       </section>
     </main>
