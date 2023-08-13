@@ -7,12 +7,12 @@ import avatar from "../../images/paul.svg";
 
 function Header(props) {
 
-  const { pathname } = useLocation();  
+  const { pathname } = useLocation();
   
   return (
     <header>
 
-      <Navbar navLinks={props.navLinks}/>
+      <Navbar navLinks={props.navLinks} featured={props.featured}/>
 
       <section className="hero">
 

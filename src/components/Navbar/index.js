@@ -24,7 +24,7 @@ function Navbar(props) {
 
             <Nav.Item>
               <NavLink
-              to="projectgallery"
+              to={`projectgallery/${props.featured}`}
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }>
